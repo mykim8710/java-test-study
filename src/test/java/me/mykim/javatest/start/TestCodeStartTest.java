@@ -1,5 +1,6 @@
 package me.mykim.javatest.start;
 
+import me.mykim.javatest.Study;
 import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -11,11 +12,11 @@ class TestCodeStartTest {
     @DisplayName("testCode 만들어보기")
     void testCode_Start() throws Exception {
         // given
-        TestCodeStart testCodeStart = new TestCodeStart();
+        Study study = new Study();
 
         // when & then
-        assertNotNull(testCodeStart);
-        assertThat(testCodeStart).isNotNull();
+        assertNotNull(study);
+        assertThat(study).isNotNull();
         System.out.println("@Test testCodeStart()");
     }
 
