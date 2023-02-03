@@ -1,9 +1,9 @@
-package me.mykim.javatest.testinstance;
+package me.mykim.javatest.junit5.testinstance;
 
 import org.junit.jupiter.api.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS) // 클래스마다 테스트 인스턴스를 생성, 메서드가 하나의 테스트 인스턴스를 공유
-public class TestInstanceTest {
+class TestInstanceTest {
 
     /**
      * JUnit은 테스트 메소드 마다 테스트 인스턴스를 새로 만든다.
@@ -25,8 +25,8 @@ public class TestInstanceTest {
         System.out.println(this);
         /**
          * @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-         * X : me.mykim.javatest.testinstance.TestInstanceTest@4c309d4d
-         * O : me.mykim.javatest.testinstance.TestInstanceTest@2d2ffcb7
+         * X : me.mykim.javatest.junit5.testinstance.TestInstanceTest@4c309d4d
+         * O : me.mykim.javatest.junit5.testinstance.TestInstanceTest@2d2ffcb7
          */
     }
 
@@ -36,8 +36,8 @@ public class TestInstanceTest {
         System.out.println(this);    //
         /**
          * @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-         * X : me.mykim.javatest.testinstance.TestInstanceTest@21b2e768
-         * O : me.mykim.javatest.testinstance.TestInstanceTest@2d2ffcb7
+         * X : me.mykim.javatest.junit5.testinstance.TestInstanceTest@21b2e768
+         * O : me.mykim.javatest.junit5.testinstance.TestInstanceTest@2d2ffcb7
          */
     }
 

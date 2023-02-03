@@ -1,10 +1,10 @@
-package me.mykim.javatest.taggingandfiltering;
+package me.mykim.javatest.junit5.taggingandfiltering;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-public class TestTaggingAndFilteringTest {
+class TestTaggingAndFilteringTest {
     /**
      * @Tag("fast")가 붙은 테스트는 로컬에서 돌리고 싶고,
      * @Tag("slow")가 붙은 테스트는 로컬이외에 환경에서 돌리고 싶다.

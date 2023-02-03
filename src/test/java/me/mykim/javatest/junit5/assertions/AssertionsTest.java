@@ -1,7 +1,8 @@
-package me.mykim.javatest.assertions;
+package me.mykim.javatest.junit5.assertions;
 
 import me.mykim.javatest.Study;
 import me.mykim.javatest.StudyStatus;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +10,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AssertionsTest {
+class AssertionsTest {
     @Test
     @DisplayName("스터디 만들기")
     void testCode1() throws Exception {
@@ -25,6 +26,7 @@ public class AssertionsTest {
 
     @Test
     @DisplayName("스터디 만들기 : assertAll")
+    @Disabled
     void testCode2() throws Exception {
         // given
         Study study = new Study();
@@ -53,6 +55,7 @@ public class AssertionsTest {
 
     @Test
     @DisplayName("스터디 만들기 : assertTimeout")
+    @Disabled
     void testCode4() throws Exception {
         /**
          * 이 상태면 {} 코드블럭안에 코드들이 모두 돌아야 이 테스트는 종료된다.

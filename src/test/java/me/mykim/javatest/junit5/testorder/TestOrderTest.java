@@ -1,10 +1,10 @@
-package me.mykim.javatest.testorder;
+package me.mykim.javatest.junit5.testorder;
 
 import org.junit.jupiter.api.*;
 
 //@TestInstance(Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-public class TestOrderTest {
+class TestOrderTest {
 
     /**
      * 테스트의 순서

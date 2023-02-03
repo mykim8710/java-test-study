@@ -1,4 +1,4 @@
-package me.mykim.javatest.assumptions;
+package me.mykim.javatest.junit5.assumptions;
 
 import me.mykim.javatest.Study;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 
-public class AssumptionsTest {
+class AssumptionsTest {
 
     @Test
     @DisplayName("Assumptions.assumeTrue")

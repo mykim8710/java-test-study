@@ -1,10 +1,10 @@
-package me.mykim.javatest.customannotation;
+package me.mykim.javatest.junit5.customannotation;
 
-import me.mykim.javatest.FastTest;
-import me.mykim.javatest.SlowTest;
+import me.mykim.javatest.junit5.FastTest;
+import me.mykim.javatest.junit5.SlowTest;
 import org.junit.jupiter.api.DisplayName;
 
-public class CustomAnnotationTest {
+class CustomAnnotationTest {
 
     /**
      * Cumstom annotation을 정의하고 적용

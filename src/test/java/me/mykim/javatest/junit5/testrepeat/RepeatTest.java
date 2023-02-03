@@ -1,4 +1,4 @@
-package me.mykim.javatest.testrepeat;
+package me.mykim.javatest.junit5.testrepeat;
 
 import me.mykim.javatest.Study;
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +16,7 @@ import org.junit.jupiter.params.converter.ConvertWith;
 import org.junit.jupiter.params.converter.SimpleArgumentConverter;
 import org.junit.jupiter.params.provider.*;
 
-public class RepeatTest {
+class RepeatTest {
     /**
      * 테스트를 반복하고 싶다면....
      */

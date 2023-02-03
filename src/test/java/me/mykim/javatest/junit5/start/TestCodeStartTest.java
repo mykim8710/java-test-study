@@ -1,4 +1,4 @@
-package me.mykim.javatest.start;
+package me.mykim.javatest.junit5.start;
 
 import me.mykim.javatest.Study;
 import org.junit.jupiter.api.*;
