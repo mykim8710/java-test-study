@@ -1,6 +1,6 @@
 package me.mykim.javatest.junit5.start;
 
-import me.mykim.javatest.Study;
+import me.mykim.javatest.domain.Study;
 import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;

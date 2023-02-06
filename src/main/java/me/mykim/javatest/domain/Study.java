@@ -1,10 +1,29 @@
-package me.mykim.javatest;
+package me.mykim.javatest.domain;
 
+import lombok.Getter;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
+@Getter
+@Entity
 public class Study {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "STUDY_ID")
+    private Long id;
+
     private StudyStatus studyStatus;
     private int limit;
 
     private String name;
+
+    private LocalDateTime openedDateTime;
+
+
+    @ManyToOne
+    @JoinColumn(name = "STUDY_ID")
+    private Member owner;
 
     public Study() {
 
@@ -44,6 +63,19 @@ public class Study {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public LocalDateTime getOpenedDateTime() {
+        return openedDateTime;
+    }
+
+    public void setOwner(Member owner) {
+        this.owner = owner;
+    }
+
+    public void open() {
+        this.studyStatus = StudyStatus.OPEN;
+        this.openedDateTime = LocalDateTime.now();
     }
 
     @Override

@@ -1,6 +1,6 @@
 package me.mykim.javatest.junit5.assumptions;
 
-import me.mykim.javatest.Study;
+import me.mykim.javatest.domain.Study;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.EnabledOnOs;

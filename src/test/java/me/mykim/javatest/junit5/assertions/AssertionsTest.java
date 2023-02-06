@@ -1,7 +1,7 @@
 package me.mykim.javatest.junit5.assertions;
 
-import me.mykim.javatest.Study;
-import me.mykim.javatest.StudyStatus;
+import me.mykim.javatest.domain.Study;
+import me.mykim.javatest.domain.StudyStatus;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
